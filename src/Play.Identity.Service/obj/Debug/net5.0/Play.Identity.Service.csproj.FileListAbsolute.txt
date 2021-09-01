@@ -282,3 +282,14 @@ F:\camsl\Documents\Code\Play\Play.Identity\src\Play.Identity.Service\obj\Debug\n
 F:\camsl\Documents\Code\Play\Play.Identity\src\Play.Identity.Service\obj\Debug\net5.0\ref\Play.Identity.Service.dll
 F:\camsl\Documents\Code\Play\Play.Identity\src\Play.Identity.Service\obj\Debug\net5.0\Play.Identity.Service.pdb
 F:\camsl\Documents\Code\Play\Play.Identity\src\Play.Identity.Service\obj\Debug\net5.0\Play.Identity.Service.genruntimeconfig.cache
+F:\camsl\Documents\Code\Play\Play.Identity\src\Play.Identity.Service\bin\Debug\net5.0\IdentityModel.dll
+F:\camsl\Documents\Code\Play\Play.Identity\src\Play.Identity.Service\bin\Debug\net5.0\IdentityServer4.dll
+F:\camsl\Documents\Code\Play\Play.Identity\src\Play.Identity.Service\bin\Debug\net5.0\IdentityServer4.AspNetIdentity.dll
+F:\camsl\Documents\Code\Play\Play.Identity\src\Play.Identity.Service\bin\Debug\net5.0\IdentityServer4.Storage.dll
+F:\camsl\Documents\Code\Play\Play.Identity\src\Play.Identity.Service\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.OpenIdConnect.dll
+F:\camsl\Documents\Code\Play\Play.Identity\src\Play.Identity.Service\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+F:\camsl\Documents\Code\Play\Play.Identity\src\Play.Identity.Service\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
+F:\camsl\Documents\Code\Play\Play.Identity\src\Play.Identity.Service\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
+F:\camsl\Documents\Code\Play\Play.Identity\src\Play.Identity.Service\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+F:\camsl\Documents\Code\Play\Play.Identity\src\Play.Identity.Service\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+F:\camsl\Documents\Code\Play\Play.Identity\src\Play.Identity.Service\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
