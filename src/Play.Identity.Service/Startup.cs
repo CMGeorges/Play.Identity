@@ -11,6 +11,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
+using MongoDB.Bson;
 using MongoDB.Bson.Serialization;
 using MongoDB.Bson.Serialization.Serializers;
 using MongoDB.Driver.GeoJsonObjectModel;
@@ -33,10 +34,10 @@ namespace Play.Identity.Service
         public void ConfigureServices(IServiceCollection services)
         {
             // Identity settings
-            BsonSerializer.RegisterSerializer(new GuidSerializer(MongoDB.Bson.BsonType.String));
+            BsonSerializer.RegisterSerializer(new GuidSerializer(BsonType.String));
             var serviceSettings = Configuration.GetSection(nameof(ServiceSettings)).Get<ServiceSettings>();
             var mongoDbSettings = Configuration.GetSection(nameof(MongoDbSettings)).Get<MongoDbSettings>();
-            IdentityServerSettings identityServerSettings  = new();
+            var identityServerSettings  = Configuration.GetSection(nameof(IdentityServerSettings)).Get<IdentityServerSettings>();
 
             services.AddDefaultIdentity<ApplicationUser>()
                     .AddRoles<ApplicationRole>()
@@ -45,10 +46,17 @@ namespace Play.Identity.Service
                         mongoDbSettings.ConnectionString,
                         serviceSettings.ServiceName
                     );
+
             // Identity security settings
-            services.AddIdentityServer()
+            services.AddIdentityServer(options =>
+            {
+                options.Events.RaiseSuccessEvents = true;
+                options.Events.RaiseFailureEvents = true;//Really helpful to see whats going on
+                options.Events.RaiseErrorEvents = true;//Really helpful to see whats going on
+            })
                     .AddAspNetIdentity<ApplicationUser>()
                     .AddInMemoryApiScopes(identityServerSettings.ApiScopes)
+                    .AddInMemoryApiResources(identityServerSettings.ApiResources)
                     .AddInMemoryClients(identityServerSettings.Clients)
                     .AddInMemoryIdentityResources(identityServerSettings.IdentityResources)
                     .AddDeveloperSigningCredential();//<= this is only for Development environment or learning 
