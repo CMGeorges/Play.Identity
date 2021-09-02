@@ -61,6 +61,8 @@ namespace Play.Identity.Service
                     .AddInMemoryIdentityResources(identityServerSettings.IdentityResources)
                     .AddDeveloperSigningCredential();//<= this is only for Development environment or learning 
 
+            services.AddLocalApiAuthentication();
+
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {

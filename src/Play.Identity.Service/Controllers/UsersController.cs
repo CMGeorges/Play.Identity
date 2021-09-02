@@ -2,14 +2,17 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Play.Identity.Service.Entities;
+using static IdentityServer4.IdentityServerConstants;
 
 namespace Play.Identity.Service.Controllers
 {
     [ApiController]
     [Route("users")]
+    [Authorize(Policy = LocalApi.PolicyName)]
     public class UsersController : ControllerBase
     {
         #region Fields
@@ -24,7 +27,7 @@ namespace Play.Identity.Service.Controllers
             this._userManager = userManager;
         }
         #endregion
-        
+
 
         #region Public methods
 
@@ -46,8 +49,8 @@ namespace Play.Identity.Service.Controllers
 
             if (user == null)
             {
-                return NotFound();                
-            }            
+                return NotFound();
+            }
 
             return user.AsDto();
         }
@@ -60,7 +63,7 @@ namespace Play.Identity.Service.Controllers
 
             if (user == null)
             {
-                return NotFound();                
+                return NotFound();
             }
 
             user.Email = userDto.Email;
@@ -69,7 +72,7 @@ namespace Play.Identity.Service.Controllers
 
             await _userManager.UpdateAsync(user);
 
-            return NoContent();           
+            return NoContent();
 
         }
 
@@ -81,9 +84,9 @@ namespace Play.Identity.Service.Controllers
 
             if (user == null)
             {
-                return NotFound();                
+                return NotFound();
             }
-            
+
             await _userManager.DeleteAsync(user);
 
             return NoContent();
@@ -92,5 +95,5 @@ namespace Play.Identity.Service.Controllers
 
         #endregion
     }
-    
+
 }
