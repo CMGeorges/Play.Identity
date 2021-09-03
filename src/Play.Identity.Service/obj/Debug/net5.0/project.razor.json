@@ -15619,6 +15619,11 @@
   "RootNamespace": "Play.Identity.Service",
   "Documents": [
     {
+      "FilePath": "f:\\camsl\\Documents\\Code\\Play\\Play.Identity\\src\\Play.Identity.Service\\Areas\\Identity\\Pages\\_ValidationScriptsPartial.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\_ValidationScriptsPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "f:\\camsl\\Documents\\Code\\Play\\Play.Identity\\src\\Play.Identity.Service\\Pages\\_ViewImports.cshtml",
       "TargetPath": "Pages\\_ViewImports.cshtml",
       "FileKind": "mvc"
@@ -15631,6 +15636,11 @@
     {
       "FilePath": "f:\\camsl\\Documents\\Code\\Play\\Play.Identity\\src\\Play.Identity.Service\\Pages\\_ViewStart.cshtml",
       "TargetPath": "Pages\\_ViewStart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "f:\\camsl\\Documents\\Code\\Play\\Play.Identity\\src\\Play.Identity.Service\\Areas\\Identity\\Pages\\Account\\Logout.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\Logout.cshtml",
       "FileKind": "mvc"
     },
     {

@@ -293,3 +293,5 @@ F:\camsl\Documents\Code\Play\Play.Identity\src\Play.Identity.Service\bin\Debug\n
 F:\camsl\Documents\Code\Play\Play.Identity\src\Play.Identity.Service\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 F:\camsl\Documents\Code\Play\Play.Identity\src\Play.Identity.Service\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
 F:\camsl\Documents\Code\Play\Play.Identity\src\Play.Identity.Service\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
+F:\camsl\Documents\Code\Play\Play.Identity\src\Play.Identity.Service\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Logout.cshtml.g.cs
+F:\camsl\Documents\Code\Play\Play.Identity\src\Play.Identity.Service\obj\Debug\net5.0\Razor\Areas\Identity\Pages\_ValidationScriptsPartial.cshtml.g.cs

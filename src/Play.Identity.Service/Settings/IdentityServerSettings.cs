@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using IdentityServer4.Models;
 
 namespace Play.Identity.Service.Settings
@@ -13,7 +14,8 @@ namespace Play.Identity.Service.Settings
         public IReadOnlyCollection<IdentityResource> IdentityResources => new IdentityResource[]
         {
             new IdentityResources.OpenId(),
-            new IdentityResources.Profile()
+            new IdentityResources.Profile(),
+            new IdentityResource("roles",new[]{"role"})
         };
     }
     
