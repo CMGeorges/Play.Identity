@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\camsl\\Documents\\Code\\Play\\Play.Identity\\src\\Play.Identity.Service\\Play.Identity.Service.csproj": {}
+    "F:\\camsl\\Documents\\Code\\Udemy\\BuildingMicroserviceSecurityIdentity\\Play.Infra\\Play.Identity\\src\\Play.Identity.Service\\Play.Identity.Service.csproj": {}
   },
   "projects": {
-    "F:\\camsl\\Documents\\Code\\Play\\Play.Identity\\src\\Play.Identity.Service\\Play.Identity.Service.csproj": {
-      "version": "1.0.0",
+    "F:\\camsl\\Documents\\Code\\Udemy\\BuildingMicroserviceSecurityIdentity\\Play.Infra\\Play.Common\\src\\Play.Common\\Play.Common.csproj": {
+      "version": "1.0.3",
       "restore": {
-        "projectUniqueName": "F:\\camsl\\Documents\\Code\\Play\\Play.Identity\\src\\Play.Identity.Service\\Play.Identity.Service.csproj",
-        "projectName": "Play.Identity.Service",
-        "projectPath": "F:\\camsl\\Documents\\Code\\Play\\Play.Identity\\src\\Play.Identity.Service\\Play.Identity.Service.csproj",
+        "projectUniqueName": "F:\\camsl\\Documents\\Code\\Udemy\\BuildingMicroserviceSecurityIdentity\\Play.Infra\\Play.Common\\src\\Play.Common\\Play.Common.csproj",
+        "projectName": "CMGeorges.Play.Common",
+        "projectPath": "F:\\camsl\\Documents\\Code\\Udemy\\BuildingMicroserviceSecurityIdentity\\Play.Infra\\Play.Common\\src\\Play.Common\\Play.Common.csproj",
         "packagesPath": "C:\\Users\\camsl\\.nuget\\packages\\",
-        "outputPath": "F:\\camsl\\Documents\\Code\\Play\\Play.Identity\\src\\Play.Identity.Service\\obj\\",
+        "outputPath": "F:\\camsl\\Documents\\Code\\Udemy\\BuildingMicroserviceSecurityIdentity\\Play.Infra\\Play.Common\\src\\Play.Common\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -47,9 +47,108 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "MassTransit.AspNetCore": {
+              "target": "Package",
+              "version": "[7.2.2, )"
+            },
+            "MassTransit.RabbitMQ": {
+              "target": "Package",
+              "version": "[7.2.2, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[5.0.9, )"
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Binder": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[5.0.2, )"
+            },
+            "MongoDB.Driver": {
+              "target": "Package",
+              "version": "[2.13.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "F:\\camsl\\Documents\\Code\\Udemy\\BuildingMicroserviceSecurityIdentity\\Play.Infra\\Play.Identity\\src\\Play.Identity.Service\\Play.Identity.Service.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\camsl\\Documents\\Code\\Udemy\\BuildingMicroserviceSecurityIdentity\\Play.Infra\\Play.Identity\\src\\Play.Identity.Service\\Play.Identity.Service.csproj",
+        "projectName": "Play.Identity.Service",
+        "projectPath": "F:\\camsl\\Documents\\Code\\Udemy\\BuildingMicroserviceSecurityIdentity\\Play.Infra\\Play.Identity\\src\\Play.Identity.Service\\Play.Identity.Service.csproj",
+        "packagesPath": "C:\\Users\\camsl\\.nuget\\packages\\",
+        "outputPath": "F:\\camsl\\Documents\\Code\\Udemy\\BuildingMicroserviceSecurityIdentity\\Play.Infra\\Play.Identity\\src\\Play.Identity.Service\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\camsl\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "F:\\camsl\\Documents\\Code\\Play\\packages": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "F:\\camsl\\Documents\\Code\\Udemy\\BuildingMicroserviceSecurityIdentity\\Play.Infra\\Play.Common\\src\\Play.Common\\Play.Common.csproj": {
+                "projectPath": "F:\\camsl\\Documents\\Code\\Udemy\\BuildingMicroserviceSecurityIdentity\\Play.Infra\\Play.Common\\src\\Play.Common\\Play.Common.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
             "AspNetCore.Identity.MongoDbCore": {
               "target": "Package",
               "version": "[3.1.1, )"
+            },
+            "CMGeorges.Play.Common": {
+              "target": "Package",
+              "version": "[1.0.3, )"
             },
             "IdentityServer4": {
               "target": "Package",
@@ -63,13 +162,13 @@
               "target": "Package",
               "version": "[5.0.9, )"
             },
+            "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
+              "target": "Package",
+              "version": "[1.10.14, )"
+            },
             "Microsoft.VisualStudio.web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[5.0.2, )"
-            },
-            "Play.Common": {
-              "target": "Package",
-              "version": "[1.0.2, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
