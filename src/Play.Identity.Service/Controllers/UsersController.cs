@@ -12,7 +12,7 @@ namespace Play.Identity.Service.Controllers
 {
     [ApiController]
     [Route("users")]
-    [Authorize(Policy = LocalApi.PolicyName)]
+    [Authorize(Policy = LocalApi.PolicyName, Roles = Roles.Admin)]
     public class UsersController : ControllerBase
     {
         #region Fields
